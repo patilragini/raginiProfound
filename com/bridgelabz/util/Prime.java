@@ -26,11 +26,11 @@ class Prime{
 			for(int i=2;i<num;i++){
 				 /*check condition if number is having remainder ==0
 				if number is divisible&remainder=0 hence it is non-prime*/
-					if(num%i==0){
+				if(num%i==0){
 					System.out.println("entered is not prime");    
 					break;
 				}
-				else{//IF THE
+				else{					//numberis not div by 2 hence prime
 					System.out.println(" is prime");
 					break;
 				}

@@ -11,26 +11,30 @@
  *
  ******************************************************************************/
 
-/*
-/* number is given bu user */
+
 package com.bridgelabz.util;
 class Prime{
 	public static void main(String args[]){
+		/*
+		/* number is given by user is accepted as args[0] as string ,args[0] is converted to integer using Integer.parseInt(args[0])
+		*/
 		int num=Integer.parseInt(args[0]);
 		System.out.println("entered number is=="+num);	
 			if(num==1||num==0){
 					System.out.println("Entered is not prime");
-			}			
-				for(int i=2;i<num;i++){
+			}/* try number given by user from 2 to entered number */			
+			for(int i=2;i<num;i++){
+				 /*check condition if number is having remainder ==0
+				if number is divisible&remainder=0 hence it is non-prime*/
 					if(num%i==0){
-						System.out.println("entered is not prime");
-						break;
-					}
-					else{
-						System.out.println(" is prime");
-						break;
-					}
-				}				
+					System.out.println("entered is not prime");    
+					break;
+				}
+				else{//IF THE
+					System.out.println(" is prime");
+					break;
+				}
+			}//end of for loop				
 	}
 }
 		
