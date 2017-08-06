@@ -1,0 +1,38 @@
+
+/******************************************************************************
+ *  Compilation:  javac -d bin PrimeChecker.java
+ *  Execution:    java -cp bin com.bridgelabz.util.Prime n
+ *  
+ *  Purpose: Determines whether entered number  n is prime.
+ *
+ *  @author  ragini patil
+ *  @version 1.0
+ *  @since   06-08-2017
+ *
+ ******************************************************************************/
+
+/*
+/* number is given bu user */
+package com.bridgelabz.util;
+class Prime{
+	public static void main(String args[]){
+		int num=Integer.parseInt(args[0]);
+		System.out.println("entered number is=="+num);	
+			if(num==1||num==0){
+					System.out.println("Entered is not prime");
+			}			
+				for(int i=2;i<num;i++){
+					if(num%i==0){
+						System.out.println("entered is not prime");
+						break;
+					}
+					else{
+						System.out.println(" is prime");
+						break;
+					}
+				}				
+	}
+}
+		
+			
+
