@@ -1,4 +1,4 @@
-//10******
+
 /******************************************************************************
  *  Compilation:  javac -d bin DayOfWeek.java
  *  Execution:    java -cp bin com.bridgelabz.util.DayOfWeek n n n 

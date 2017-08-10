@@ -1,4 +1,4 @@
-//5 ****
+
 /******************************************************************************
  *  Compilation:  javac -d bin Quadratic.java
  *  Execution:    java -cp bin com.bridgelabz.util.Quadratic 

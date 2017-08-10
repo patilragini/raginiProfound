@@ -1,4 +1,4 @@
-/* 9 */
+
 /******************************************************************************
  *  Compilation:  javac -d bin WindChill.java
  *  Execution:    java -cp bin com.bridgelabz.util.WindChill n n 

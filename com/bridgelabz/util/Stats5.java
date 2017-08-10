@@ -1,4 +1,4 @@
-// 8 *****
+
 /******************************************************************************
  *  Compilation:  javac -d bin Stats5.java
  *  Execution:    java -cp bin com.bridgelabz.util.Stats5 n

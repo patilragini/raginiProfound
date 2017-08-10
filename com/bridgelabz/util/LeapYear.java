@@ -3,7 +3,7 @@
  *  Compilation:  javac -d bin LeapYear.java
  *  Execution:    java -cp bin com.bridgelabz.util.LeapYear n
  *  
- *  Purpose: Determines whether entered number  n is prime.
+ *  Purpose: Determines whether entered number  n is leap year
  *
  *  @author  ragini patil
  *  @version 1.0

@@ -1,4 +1,4 @@
-//6******					( A) prog to calculate 1) distance 2) power
+
 
 /******************************************************************************
  *  Compilation:  javac -d bin Distance.java

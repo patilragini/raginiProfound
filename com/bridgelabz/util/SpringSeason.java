@@ -1,4 +1,4 @@
-//4 SpringSeason.java
+
 /******************************************************************************
  *  Compilation:  javac -d bin SpringSeason.java
  *  Execution:    java -cp bin com.bridgelabz.util.SpringSeason n n
