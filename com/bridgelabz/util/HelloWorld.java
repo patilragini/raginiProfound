@@ -1,23 +1,74 @@
 /******************************************************************************
- *  Compilation:  javac -d bin HelloWorld.java
- *  Execution:    java -cp bin com.bridgelabz.util.HelloWorld n
+ *  Compilation:  javac -d bin PrintInitial.java
+ *  Execution:    java -cp bin com.bridgelabz.util.PrintInitial
  *  
- *  Purpose: Determines whether entered number  n is prime.
+ *  Purpose: 
  *
  *  @author  ragini patil
  *  @version 1.0
- *  @since   06-08-2017
+ *  @since   07-08-2017
  *
  ******************************************************************************/
 
 
 package com.bridgelabz.util;
-/* hello world program */
 
-class HelloWorld{
+class PrintInitial{
 	public static void main (String args[]){
-		System.out.println("Hello world!!!");//print stataemant
-		System.out.println("ragini patil's test program");
+		String a;
+		System.out.println("enter initial a b d or l ");
+		System.out.println("	");
+		a=args[0];
+		switch(a){
+			case 'a':
+				System.out.println("		 ***		");
+				System.out.println("	    ** **	");
+				System.out.println("	   **   **	");
+				System.out.println("	  **     **	");
+				System.out.println("	 ***********	");
+				System.out.println("	*************	");
+				System.out.println("   **           **	");
+				System.out.println("  **             **	");
+				System.out.println(" **               **	");
+			break;
+			case 'b':
+				System.out.println("*******		");
+				System.out.println("**    **	");
+				System.out.println("**     **	");
+				System.out.println("**    **	");
+				System.out.println("*******	");
+				System.out.println("*******	");
+				System.out.println("**   **	");
+				System.out.println("**    **	");
+				System.out.println("**   **	");
+				System.out.println("******	");
+			break;
+			case 'd':
+				System.out.println("******		");
+				System.out.println("**    **	");
+				System.out.println("**     **	");
+				System.out.println("**      **	");
+				System.out.println("**      **	");
+				System.out.println("**      **	");
+				System.out.println("**     **	");
+				System.out.println("**     **	");
+				System.out.println("**    **	");
+				System.out.println("******	");
+			break;
+			case 'l':
+				System.out.println("**		");
+				System.out.println("**	");
+				System.out.println("**	");
+				System.out.println("**	");
+				System.out.println("**	");
+				System.out.println("**	");
+				System.out.println("**	");
+				System.out.println("**	");
+				System.out.println("*********	");
+				System.out.println("*********	");
+			break;
+			default :
+			    System.out.println("invalid entry	");
+		}
 	}
 }
-		
