@@ -2,12 +2,12 @@
 
 /******************************************************************************
  *  Compilation:  javac -d bin FlipCoin.java
- *  Execution:    java -cp bin com.bridgelabz.util.FlipCoin n
+ *  Execution:    java -cp bin com.bridgelabz.util.FlipCoin
  *  
- *  Purpose: simulate a fair coin flip and print  "head " or "tail" accordingly nad give percentage
+ *  Purpose: simulate a fair coin flip and print  "head " or "tail" accordingly
  *  @author  ragini patil
  *  @version 1.0
- *  @since   13-08-2017
+ *  @since   10-08-2017
  *
  ******************************************************************************/
 package com.bridgelabz.util;
