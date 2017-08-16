@@ -7,12 +7,13 @@
  *
  *  @author  ragini patil
  *  @version 1.0
- *  @since   12-08-2017
+ *  @since   13-08-2017
  *
  ******************************************************************************/
 
 package com.bridgelabz.util;
 import java.util.Scanner;
+
 public class SecondLargest_Smallest{
     public static void main(String[] args){
         int n, temp;

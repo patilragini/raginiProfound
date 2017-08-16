@@ -13,7 +13,6 @@
  *  could use Integer.toBinaryString(N) instead.
  ******************************************************************************/
 
-
 package com.bridgelabz.util;
 import java.util.Scanner;
 import java.lang.Integer;

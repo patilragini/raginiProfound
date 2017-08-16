@@ -1,5 +1,3 @@
-
-
 /******************************************************************************
  *  Compilation:  javac -d bin FlipCoin.java
  *  Execution:    java -cp bin com.bridgelabz.util.FlipCoin
@@ -10,14 +8,11 @@
  *  @since   10-08-2017
  *
  ******************************************************************************/
-package com.bridgelabz.util;
+
+ package com.bridgelabz.util;
  
 public class FlipCoin{
-	/*
-    * The main function is written to test FlipCoin class
-    */
 	static int headctr,tailctr;
-
 	public static void main(String[] args){
 		//math.random() returns value between 0.0 and 1
 		//so it is heads or tail 50% of time
@@ -42,6 +37,5 @@ public class FlipCoin{
 		t=(t/num)*100;
 		System.out.println("Heads percentage"+h+"%");
 		System.out.println("Tails percentage"+t+"%");
-
 	}//main end
 }

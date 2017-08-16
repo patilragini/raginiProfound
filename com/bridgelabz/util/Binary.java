@@ -13,12 +13,11 @@
  *  could use Integer.toBinaryString(N) instead.
  ******************************************************************************/
 
-//package com.bridgelabz.util;
+package com.bridgelabz.util;
 
 public class Binary { 
     public static void main(String[] args) { 
-        // read in the command-line argument
-        int n = Integer.parseInt(args[0]);
+       int n = Integer.parseInt(args[0]);
         // set power to the largest power of 2 that is <= n
         int power = 1;
         while (power <= n/2) {

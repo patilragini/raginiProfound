@@ -18,11 +18,11 @@
 package com.bridgelabz.util;
 
 public class Sqrt { 
+	static double c,epsilon,t;
     public static void main(String[] args) { 
-        // read in the command-line argument
-        double c = Double.parseDouble(args[0]);
-        double epsilon = 1e-15;    // relative error tolerance
-        double t = c;              // estimate of the square root of c
+		c = Double.parseDouble(args[0]);
+		epsilon = 1e-15;    // relative error tolerance
+        t = c;              // estimate of the square root of c
         // repeatedly apply Newton update step until desired precision is achieved
 		//
 		if(c>=0){

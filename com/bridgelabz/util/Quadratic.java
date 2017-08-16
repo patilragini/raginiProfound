@@ -12,16 +12,12 @@
  ******************************************************************************/
 
 package com.bridgelabz.util;
-import java.util.Scanner ;
+import java.util.Scanner;
 
 public class Quadratic{
-	/*
-    * The main function is written to test Quadratic class
-    */
+	static int a,b,c;
+	static double r1,r2,d;
 	public static void main(String args[]){
-		/**/
-		int a,b,c;
-		double r1,r2,d;//r is root
 		Scanner sc= new Scanner(System.in);
 		System.out.println(" give quadratic equation =ax^2 +bx +c");
 		System.out.println("enter a: b: c:");

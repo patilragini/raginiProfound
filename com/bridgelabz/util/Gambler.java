@@ -30,16 +30,17 @@
  ******************************************************************************/
 package com.bridgelabz.util;
 public class Gambler { 
-    public static void main(String[] args) {
-        int stake  = Integer.parseInt(args[0]);    // gambler's stating bankroll
-        int goal   = Integer.parseInt(args[1]);    // gambler's desired bankroll
-        int trials = Integer.parseInt(args[2]);    // number of trials to perform
-        int bets = 0;        // total number of bets made
-        int wins = 0;        // total number of games won
+	static double stake,goal,trials,bets,wins,cash;
+    public static void main(String[] args){
+        stake  = Integer.parseInt(args[0]);    // gambler's stating bankroll
+        goal   = Integer.parseInt(args[1]);    // gambler's desired bankroll
+        trials = Integer.parseInt(args[2]);    // number of trials to perform
+        bets = 0;        // total number of bets made
+        wins = 0;        // total number of games won
         // repeat trials times
         for (int t = 0; t < trials; t++) {
             // do one gambler's ruin simulation
-            int cash = stake;
+            cash = stake;
             while (cash > 0 && cash < goal) {
                 bets++;
                 if (Math.random() < 0.5) cash++;     // win $1

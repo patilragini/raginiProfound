@@ -13,12 +13,11 @@
 package com.bridgelabz.util;
 
 public class SpringSeason{
+	int m,d;
 	public static void main(String args[]){
-		/*
-		/*  month and day is given by user is accepted as args[0],args[1]as string ,they are converted to integer using Integer.parseInt(args[0])
-		*/
-		int m=Integer.parseInt(args[0]);
-		int d=Integer.parseInt(args[1]);
+		// month and day is given by user
+		m=Integer.parseInt(args[0]);
+		d=Integer.parseInt(args[1]);
 		/*ispring is boolean variable to determine true or false ;true indicates spring , false as not spring*/
 		boolean isspring=(m==3&&d>=20&&d<=31)||
 		(m==4&&d>=1&&d<=30)||

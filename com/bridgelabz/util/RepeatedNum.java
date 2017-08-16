@@ -6,7 +6,7 @@
  *
  *  @author  ragini patil
  *  @version 1.0
- *  @since   07-08-2017
+ *  @since   12-08-2017
  *
  ******************************************************************************/
 
@@ -15,7 +15,6 @@ package com.bridgelabz.util;
 import java.util.*;
 
 public class RepeatedNum{
-	//main function to execute repeatednum class
 	public static void main(String args[]){
 		Scanner s = new Scanner(System.in);
 		int i,j;

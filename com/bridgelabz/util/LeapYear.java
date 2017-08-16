@@ -16,9 +16,9 @@ package com.bridgelabz.util;
 /* leap year program */
 
 public class LeapYear{
+	int year;
+	
 	public static void main(String args[]){
-		/* number is given by user is accepted as args[0] as string ,args[0] is converted to integer using 
-		Integer.parseInt(args[0]) and stored in variable year*/
 		int year=Integer.parseInt(args[0]);
 		/* isLeapYear is a boolean variable  which is used to store true or false 
 		true means year is leap year else not leap year*/
@@ -30,6 +30,8 @@ public class LeapYear{
 		//divisible by 4&100 unless/or divisible by 400
 		isLeapYear=isLeapYear || (year%400 == 0);
 		//print the value
-		System.out.println(isLeapYear);
+		if(isLeapYear==true)
+		System.out.println(year+"  is leap year");
+		else System.out.println(year+"  is not leap year");
 	}
 }

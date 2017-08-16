@@ -1,4 +1,3 @@
-
 /******************************************************************************
  *  Compilation:  javac -d bin WindChill.java
  *  Execution:    java -cp bin com.bridgelabz.util.WindChill n n 
@@ -13,12 +12,7 @@
  
 package com.bridgelabz.util;
 public class WindChill{
-	/*
-    * The main function is written to test WindChill class
-    */
 	public static void main(String args[]){
-		/* temperatre and speed of wind given by user is accepted as args[0] and args[1] as string ,converted to double using 
-		Double.parseDouble(args[]) and stored in variable 't' and 'v' respectivelly */
 		double t=Double.parseDouble(args[0]);
 		double v=Double.parseDouble(args[1]);
 		double a,b,c,wc=0;		// double variables to store calculations

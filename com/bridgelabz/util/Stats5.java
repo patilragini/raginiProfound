@@ -12,42 +12,26 @@
  ******************************************************************************/
 
 package com.bridgelabz.util;
-import java.util.*;
+import java.util.Random;
 
-public class Stats5{
-	/*
-    * The main function is written to test Random class
-    */
-	public static void main(String args[]){
-		//n is varable to store number of random sample required by user as args[0]
-		int n=Integer.parseInt(args[0]);
-		double total=0,b;
-		double avg=0,max=0;
-		/*a[] is an array to store all random numbers generated. New is used to allocate memeory.
-		n is the size of array.*/
-		double a[]=new double[n];
-		/* start givingn random sample between 0 and1 */
-		for(int i=0;i<n;i++){
-			/* Math.random is mathematical function in lang package for taking giving random numbers
-			between 0 and 1*/
-			a[i]=(Math.random()*1000);
-			b=a[i];		// b varable stores   a[i]th value
-			/* max variable store maximum value given from Math.max(b and max)  */
-			max=Math.max(b,max);
-			/* max gets an updated maximum value */
-			
-			//min=Math.min(b,a[i+1]);
-			
-			total = (b+total);/*total variable is used to store the total of random samples;
-							  total get update in next itterartion*/
-		}		//end of for loop
-		avg=total/n;// average calculation total / n
-		/* print all random samples*/
-		for(int i=0;i<n;i++){
-			System.out.println(+a[i]);
-		}//end of for
-		System.out.println("Average ="+avg);//print average of random samples
-		//System.out.println("Minimum="+min);
-		System.out.println("Maximum ="+max);//print maximum value of random samples
-	}
+public class Stats5{    
+    	public static void main(String args[]){
+            double[] number = new double[5];
+			double sum = 0;
+			/* start giving 5 random sample between 0 and1 */
+			for(int i=0;i<5;i++){           
+				number[i] = Math.random();
+			}
+			for(int i = 0; i<=4;i++){
+				System.out.println(number[i]);
+				sum = sum+number[i];
+			}
+			System.out.println("The Sum of 5 random value = " +sum);
+			double largest = Math.max(number[0],Math.max(number[1],Math.max(number[2],Math.max(number[3],number[4]))));
+			double smallest =Math.min(number[0],Math.min(number[1],Math.min(number[2],Math.min(number[3],number[4])))); 
+
+			 
+			System.out.println("Minimum of the 5 generated values = "+smallest);
+			System.out.println("Maximum of the 5 generated values = "+largest);
+		}
 }

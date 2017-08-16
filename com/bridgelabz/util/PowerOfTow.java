@@ -5,7 +5,7 @@
  *  Purpose: take argument n and print tableof power of 2  less than equal to 2^n
  *  @author  ragini patil
  *  @version 1.0
- *  @since   08-08-2017
+ *  @since   12-08-2017
  *
  ******************************************************************************/
  package com.bridgelabz.util;

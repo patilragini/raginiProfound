@@ -1,35 +1,59 @@
-
 /******************************************************************************
- *  Compilation:  javac -d bin Sqrt .java
- *  Execution:    java -cp bin com.bridgelabz.util.Sqrt 
+ *  Compilation:  javac -d bin  Sin.java
+ *  Execution:    java -cp bin com.bridgelabz.util. Sin
  *  
- *  Purpose: compute sin series
+ *  Purpose: Determines whether month and date is spring or not
  *
  *  @author  ragini patil
  *  @version 1.0
- *  @since   12-08-2017
+ *  @since   14-08-2017
  *
  ******************************************************************************/
-
 package com.bridgelabz.util;
+import java.util.Scanner;
+public class Sin{
 
-public class sin {
-
-    public static void main(String[] args) { 
-        double x = Double.parseDouble(args[0]);
-
-        // convert x to an angle between -2 PI and 2 PI
-        x = x % (2 * Math.PI);
-
-        // compute the Taylor series approximation
-        double term = 1.0;      // ith term = x^i / i!
-        double sum  = 0.0;      // sum of first i terms in taylor series
-
-        for (int i = 1; term != 0.0; i++) {
-            term *= (x / i);
-            if (i % 4 == 1) sum += term;
-            if (i % 4 == 3) sum -= term;
-        }
-        System.out.println(sum);
-    }
-}
+	static double Sinx,x,fact1,value,temp;
+	static int term,j=0;
+	
+		/*
+		* function returns an integer value containing fatorial value of n. 
+		* but function returns 0 when n is equal to one.
+		* 
+		*/	
+    	public static int factorial(int n)	{
+       		if(n==0){
+				return 0;
+    		}
+			int fact=1; 
+			for(int i=1;i<=n;i++){
+				fact = fact*i;
+			}
+			return fact;
+	}
+	public static void main(String args[]){			
+		Scanner s = new Scanner(System.in);
+		x = Double.parseDouble(args[0]);
+		x = x % (2*Math.PI);
+		System.out.println("Enter the no. of terms:");
+		term = s.nextInt();
+		Sinx=x;
+		term--;
+		while(j<=term){
+			for(int i=3;term!=0;i=i+2){
+			fact1 = factorial(i);
+			value = Math.pow(x,i);
+			temp = value/fact1;
+			if (i % 4 == 1){
+				Sinx += temp;
+			}
+			if (i % 4 == 3){
+				Sinx -= temp;
+			}
+			term--;
+			}
+			j++;
+		}
+		System.out.println("The value of sinx is " +Sinx);
+		}
+}		
