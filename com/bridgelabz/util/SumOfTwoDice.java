@@ -10,8 +10,9 @@
 
 package com.bridgelabz.util;
 
-	static int die1,die2,rollSum; 
+
 	public class SumOfTwoDice {
+	static int die1,die2,rollSum; 
     	public static void main(String args[]){        
 			die1 = (int)(Math.random()*6) + 1;
 			die2 = (int)(Math.random()*6) + 1;
