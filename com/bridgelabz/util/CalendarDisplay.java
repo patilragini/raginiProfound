@@ -1,5 +1,5 @@
 /*************************************************
- *Perpose: Take month and year and Display calendar 
+ *Purpose: Take month and year and Display calendar 
  *
  *@author:Patil Ragini
  *@version: 1.8
